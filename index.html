@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-black bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <h4>Your Library</h4>
+                    <div class="now-playing">
+                        <div class="np-title">Not Playing</div>
+                        <div class="np-artist"></div>
+                    </div>
+
+
+                </div>
+                <div class="songlist margin ">
+                    <ul>
+                        <li>
+                            <img class="invert" src="music.svg" alt="">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img class="invert" src="play.svg" alt="">
+                            </div>
+
+
+                        </li>
+                    </ul>
+                </div>
+                 <div class="pranshu">
+  <h2>By – <span>Pranshu Pachisia</span></h2>
+  <p>“Turning ideas into beautiful reality.”</p>
+  <p>“Every design tells a story — every pixel has a purpose.”</p>
+  <p>“Creating not just visuals, but experiences.”</p>
+  <small>~ Pranshu</small>
+</div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                    <div>
+
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="right bg-grey rounded">
+
+            <div class="header">
+                <div class="nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" />
+                    </svg>
+                </div>
+
+                <div class="now-playing">
+                    <h5>Now Playing...</h5>
+                    <img src="music.svg" alt="Now Playing" class="now-icon">
+                    <div class="now-info">
+                        <span id="nowSong">Not Playing</span>
+                        <small id="nowArtist">—</small>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Recommended</h1>
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i1.sndcdn.com/artworks-h8xxot1V1Ndn5ygR-nruauw-t500x500.jpg" alt="">
+                        <h2>AURORA - RUNAWAY</h2>
+                        <p>AURORA</p>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                        <h2>Subhanallah - YJHD</h2>
+                        <p>Pritam</p>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2737037561f1e7a2c5ff3cd0a38" alt="">
+                        <h2>Saware - PHANTOM</h2>
+                        <p>Arijit Singh</p>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://c.saavncdn.com/338/Rangi-Saari-Hindi-2022-20220525224633-500x500.jpg" alt="">
+                        <h2>Rangi Saari - ALBUM</h2>
+                        <p>Kanishk Seth & Kavita Seth</p>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://c.saavncdn.com/706/Tum-Ho-Toh-From-Saiyaara-Hindi-2025-20250616054803-500x500.jpg"
+                            alt="">
+                        <h2>Tum Ho Toh</h2>
+                        <p>Pritam</p>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i1.sndcdn.com/artworks-nPg8NGfVlIRXMdGd-G8MWZw-t500x500.jpg" alt="">
+                        <h2>WAVY</h2>
+                        <p>Karan Aujla</p>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://f4.bcbits.com/img/a0293569019_10.jpg" alt="">
+                        <h2>FA9LA</h2>
+                        <p>Flipperachi</p>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202211/5d1af4ac-5593-4ef0-831a-8e0b67330ede-one_one.png?VersionId=VrTvviyA2NZempCZozbJFcHsR6sr3dw7"
+                            alt="">
+                        <h2>Dreamers</h2>
+                        <p>BTS , JungKook</p>
+
+
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://cdn-images.dzcdn.net/images/cover/a69858ab3ff64ef6dd303c8622e092d8/0x1900-000000-80-0-0.jpg"
+                            alt="">
+                        <h2>Pehle Bhi Main</h2>
+                        <p>Vishal Mishra</p>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://a10.gaanacdn.com/gn_img/song/zLp36PvbrG/p36xj5y0br/size_m_1750855409.webp"
+                            alt="">
+                        <h2>Humsafar</h2>
+                        <p>Sachet-Parampara</p>
+
+                        
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i1.sndcdn.com/artworks-srRyv322OZCyuMnq-r8PHiQ-t500x500.jpg"
+                            alt="">
+                        <h2>Wavin Flag</h2>
+                        <p>K'NAAN</p>
+
+                        
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5q_5wLGIkhgzA-t62EmaPc2XD3mL_tTInuw&s"
+                            alt="">
+                        <h2>Qaafirana</h2>
+                        <p>Arijit Singh</p>
+                        
+
+
+                        
+                        
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://c.saavncdn.com/656/Ve-Kamleya-From-Rocky-Aur-Rani-Kii-Prem-Kahaani-Hindi-2023-20250305173306-500x500.jpg"
+                            alt="">
+                        <h2>Ve Kamleya</h2>
+                        <p>Asees Kaur</p>
+
+                        
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnLoddM3y/size_m.jpg"
+                            alt="">
+                        <h2>Iktara</h2>
+                        <p>Amit Trivedi , Kavita Seth</p>
+
+                        
+
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://cdn-images.dzcdn.net/images/cover/5afd1bf218ef9ae546f1f958f76bb893/0x1900-000000-80-0-0.jpg"
+                            alt="">
+                        <h2>Dooron Dooron</h2>
+                        <p>Paresh Pahuja</p>
+
+
+                    </div>
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="progress"></div>
+                            <div class="circle"></div>
+                        </div>
+
+                        <div class="songinfo"></div>
+                        <div class="playbuttons invert">
+                            <img id="previous" src="prev.svg" alt="">
+                            <img id="play" src="play.svg" alt="">
+                            <img id="next" src="next.svg" alt="">
+
+                        </div>
+                        <div class="songtime">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+
+                <h1>Popular Artists</h1>
+                <div class="cardcontainer">
+                    <div class="card" onclick="loadArijit()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://c.saavncdn.com/editorial/BestofRomanceArijitSingh_20231005095622.jpg" alt="">
+                        <h2>Arijit Singh</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadKaran()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 130px;"
+                            src="http://media.insider.in/image/upload/c_crop,g_custom/v1756999925/m6gmdpmfdnpsrri6synm.png"
+                            alt="">
+                        <h2>Karan Aujla</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadShreya()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://yt3.googleusercontent.com/2aZ7wtIT6bYtZFotxM6cmcuZ9S6BRWDkFdiQvm1TW22NKvhJpwSbUlogfvBpZjzCi1WL2l8HBQ=s900-c-k-c0x00ffffff-no-rj"
+                            alt="">
+                        <h3>Shreya Ghoshal</h3>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadVishal()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://artistbookingcompany.com/wp-content/uploads/2024/04/435127004_18422550823043475_3090646912270320640_n-680x680.jpg"
+                            alt="">
+                        <h2>Vishal Mishra</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadPritam()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://lh3.googleusercontent.com/sjGMYJQ1J3FZEIBsMYUztMjjYOM4-NJ24CjmIHqxTWCxAM1YgjL-d_17u7_PRhTouOwwAjbu-2x5S6I=w544-h544-p-l90-rj"
+                            alt="">
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadAtif()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtm-8Y2rIdUkXHq0CScWTe5woupTVdRlD9w&s"
+                            alt="">
+                        <h2>Atif Aslam</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadEd()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://static01.nyt.com/images/2021/10/29/arts/29sheeran-review/29sheeran-review-mediumSquareAt3X.jpg"
+                            alt="">
+                        <h2>Ed Sheeran</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" onclick="loadAnuv()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img style="border-radius: 120px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOjDGbZ4j7pICSq0_8Ve-gRmi515zKp-1eA&s"
+                            alt="">
+                        <h2>Anuv Jain</h2>
+                        <p>Artist</p>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+                <h1 class="section-title">Popular Albums & Movies</h1>
+
+                <div class="cardcontainer">
+                    <div class="card" style="margin-left: 15px;" onclick="loadYJHD()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                        <h2>Yeh Jawani Hai Deewani</h2>
+                        <p>Pritam</p>
+                    </div>
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadSaiyaara()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://speks.art/images/Album2c218f16185440f0.md.png" alt="">
+                        <h2>Saiyaraa</h2>
+                        <p>Akshaye Widhani</p>
+                    </div>
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadBrahmastra()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/M/MV5BOTQxMjVmNzgtNWExNy00OGQ5LWIwYTAtMmM2MjE1NGEwNjA3XkEyXkFqcGc@._V1_.jpg" alt="">
+                        <h2>Brahmastra</h2>
+                        <p>Karan Johar</p>
+                    </div>
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadAashiqui2()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://musiccircle.co.in/cdn/shop/files/9583e4727905a1f32f833e1a7cf1dad2.jpg?v=1746943933" alt="">
+                        <h2>Aashiqui 2</h2>
+                        <p>Bhushan Kumar and Mahesh Bhatt</p>
+                    </div>
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadAnimal()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpf7WlgCMp15Y5VJE4c6Fuu4o7GkUCLJSdgQ&s" alt="">
+                        <h2>Animal</h2>
+                        <p>Bhushan Kumar</p>
+
+                        
+                    </div>
+
+                    
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadAjab()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://static.toiimg.com/thumb.cms?msid=4957993&height=600&width=600" alt="">
+                        <h3>Ajab Prem Ki Gajab Kahani</h3>
+                        <p>Bhushan Kumar</p>
+
+                        
+                    </div>
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadRocky()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/medium/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTZhYWRhNjAwLTRlNzUtMTFlZi1hZjA3LTQzNGZmN2YyMTQ4MS5qcGc=" alt="">
+                        <h3>Rocky Aur Rani Ki Prem Katha</h3>
+                        <p>Bhushan Kumar</p>
+
+                        
+                    </div>
+
+                    <div class="card" style="margin-left: 15px;" onclick="loadSport()">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                                height="48">
+
+                                <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+
+                                <path d="M9 7 L17 12 L9 17 Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://img.freepik.com/premium-photo/love-football-wallpaper_665280-12801.jpg" alt="">
+                        <h2>Sports</h2>
+                        <p>Everyone</p>
+
+                        
+                    </div>
+                    
+
+
+                
+                
+                </div>
+
+
+
+            </div>
+
+            
+
+            
+
+            <script src="script.js"></script>
+
+            <!-- EXIT BUTTON (SAFE & SEPARATE) -->
+<div class="exit-section">
+  <button class="exit-btn" onclick="goToRating()">Exit</button>
+</div>
+
+
+
+</body>
+
+</html>

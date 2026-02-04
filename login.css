@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  /* Spotify wallpaper background */
+  background: url('https://wallpapercave.com/wp/wp9830610.jpg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay with less blur for a sharper background */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);   /* lighter overlay */
+  backdrop-filter: blur(0.5px);      /* reduced blur */
+  z-index: -1;
+}
+
+/* Center container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Glassy login box */
+.login-box {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);  /* slightly less blur */
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 0 25px rgba(29, 185, 84, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1.2s ease;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.login-box h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #1db954;
+}
+
+.login-box p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #1db954;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #18a84f;
+  box-shadow: 0 0 20px #1db954;
+}
+
+.signup {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.signup a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+/* Dashboard */
+.dashboard {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.dashboard h2 {
+  color: #1db954;
+}
+
+.dashboard button {
+  background: #1db954;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

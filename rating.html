@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rate Us</title>
+
+<style>
+  body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    color:#eee;
+
+    /* Spotify background image - much clearer */
+    background: 
+      linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)),
+      url("https://www.westlionsroar.com/wp-content/uploads/2021/03/spotify.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Popup - always visible and glowing green */
+  .popup{
+    position:fixed;
+    top:25px;
+    font-size:28px;
+    color:#f4f9f7;
+    text-align:center;
+    width:100%;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-shadow:0 0 15px #1db954;
+  }
+
+  .card{
+    width:520px;
+    padding:50px;
+    background:rgba(192, 14, 14, 0.08);
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,0,0,0.6);
+    backdrop-filter: blur(1px);
+  }
+
+  h2{
+    font-size:30px;
+    margin-bottom:30px;
+  }
+
+  .line{
+    height:55px;
+    position:relative;
+  }
+
+  .star{
+    font-size:38px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    cursor:pointer;
+    transition: transform 0.25s ease-out;
+  }
+
+  .good{
+    font-size:42px;
+    margin-top:25px;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+  }
+  .good:hover{
+    transform:scale(1.1);
+  }
+
+  .msg{
+    font-size:26px;
+    margin-top:25px;
+    color:#ffffff; /* white for better contrast */
+    display:none;
+    animation:fadeIn 1s ease forwards;
+    text-shadow:0 0 10px #1db954;
+  }
+
+  .line-after{
+    margin-top:15px;
+    height:2px;
+    width:80%;
+    background:#1db954;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:2px;
+  }
+
+  @keyframes fadeIn {
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+</style>
+</head>
+
+<body>
+
+<div class="popup">⭐ Please rate our website ⭐</div>
+
+<div class="card">
+  <h2>Try Rating from 1 Star</h2>
+
+  <div class="line"><span class="star runaway">⭐</span></div>
+  <div class="line"><span class="star runaway">⭐⭐</span></div>
+  <div class="line"><span class="star runaway">⭐⭐⭐</span></div>
+  <div class="line"><span class="star runaway">⭐⭐⭐⭐</span></div>
+
+  <div class="good">⭐⭐⭐⭐⭐</div>
+  <div class="msg">❤️ Thank you for rating us! 😄 , That's Like an Honesh Feedback<div class="line-after"></div></div>
+</div>
+
+<script>
+  document.querySelectorAll(".runaway").forEach(star=>{
+    star.addEventListener("mouseenter",()=>{
+      const x = Math.random()*200 - 100;
+      const y = Math.random()*20 - 10;
+      star.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });
+
+  document.querySelector(".good").onclick = ()=>{
+    const msg = document.querySelector(".msg");
+    msg.style.display="block";
+  };
+</script>
+
+</body>
+</html>
